@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@master
       - uses: TryGhost/action-deploy-theme@v1.0.0
