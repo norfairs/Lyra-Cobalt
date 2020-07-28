@@ -8,6 +8,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@master
+      - name: Deploy Ghost Theme
       - uses: TryGhost/action-deploy-theme@v1.0.0
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
